@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kobe Koto's Blog
+title: koto's Blog
 subtitle: ''
 description: ''
 keywords:
-author: Kobe Koto
-language: zh
-timezone: 'Asia/Chungking'
+author: kobe koto
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://evenstar3905.github.io/blog'
-url: https://evenstar3905.github.io/blog
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -57,7 +57,7 @@ prismjs:
   tab_replace: ''
 
 # Home page setting
-path: '/blog/'
+# path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
@@ -103,8 +103,3 @@ theme: inside
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-# Sidebar Avatar
-# in theme directory(source/images): /images/avatar.gif
-# in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/kobekoto.jpg
