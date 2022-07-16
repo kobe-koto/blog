@@ -338,7 +338,7 @@ data_prefix:
 data_dir:
 
 # Favicon, default to `favicon.ico`
-favicon:
+favicon: https://koto.cc/assets/images/github-icon-r.png
 
 # Google analytics
 # ga: UA-00000000-0
