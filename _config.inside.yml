@@ -121,7 +121,7 @@ sns:
   # `youtube`, `hangouts`, `linkedin`, `pinterest`, `soundcloud`, `myspace`, `weibo`, `qq
   - icon: email
     title: Email
-    url: mailto:admin@koto.cc
+    url: admin@koto.cc
     
   - icon: github
     title: GitHub
