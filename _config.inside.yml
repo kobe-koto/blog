@@ -118,7 +118,7 @@ menu:
 sns:
   # Built-in icons
   # `email`, `feed`, `github`, `twitter`, `facebook`, `instagram`, `tumblr`, `dribbble`, `telegram`
-  # `youtube`, `hangouts`, `linkedin`, `pinterest`, `soundcloud`, `myspace`, `weibo`, `qq
+  # `youtube`, `hangouts`, `linkedin`, `pinterest`, `soundcloud`, `myspace`, `weibo`, `qq`
   - icon: email
     title: Email
     url: admin@koto.cc
