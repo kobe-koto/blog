@@ -100,19 +100,19 @@ appearance:
 profile:
   # `email` is used for gravatar(https://en.gravatar.com),
   # fallback to `hexo.config.email` if not specified
-  email:
+  # email: admin@koto.cc
 
   # You can set Avatar URL directly
-  # avatar:
+  avatar: https://avatars.githubusercontent.com/u/91669733
 
-  bio: Awesome guy.
+  bio: 這裏是沒錢也沒梗的kobe-koto.
 
 # Sidebar navigation links
 menu:
   Home: /
   # About: /about
   # Links: /links
-  # Github: https://github.com/username
+  Github: https://github.com/kobe-koto
 
 # Social media URL
 sns:
@@ -121,10 +121,23 @@ sns:
   # `youtube`, `hangouts`, `linkedin`, `pinterest`, `soundcloud`, `myspace`, `weibo`, `qq
   - icon: email
     title: Email
-    url: # default to `profile.email`
-  - icon: feed
-    title: Feed
-    url: # default to `hexo.config.feed.path`
+    url: mailto:admin@koto.cc
+    
+  - icon: github
+    title: GitHub
+    url: https://github.com/kobe-koto
+    
+  - icon: twitter
+    title: Twitter
+    url: https://twitter.com/evestar3905
+    
+  - icon: telegram
+    title: Telegram
+    url: https://t.me/kobe_koto
+    
+  - icon: facebook
+    title: Facebook
+    url: https://www.facebook.com/profile.php?id=100075633594530
 
   # custom icon
   # - title: Email me
@@ -138,13 +151,13 @@ sns:
 # Sidebar footer copyright info
 footer:
   # Set to false to hide.
-  # copyright: '&copy; 2019 • <a href="">John Doe</a>'
+  copyright: '&copy; NOW • Kobe Koto'
 
   # Set to false to hide Hexo link.
-  # powered: false
+  powered: false
 
   # Set to false to hide theme link.
-  # theme: false
+  theme: false
 
   # Custom text.
   # custom: Hosted by <a target="_blank" rel="external nofollow"
@@ -285,8 +298,8 @@ copyright:
   # link: false
 
   # license: Attribution-NonCommercial-NoDerivatives 4.0 International
-  #   (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"
-  #   rel=\"external nofollow\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
+  #    (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"
+  #    rel=\"external nofollow\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
 
   # Display published date, default to `false`
   # published: false
@@ -391,6 +404,29 @@ pwa:
 
 # Plugins
 plugins:
+  - //3905.cf/npm/gitalk@1/dist/gitalk.css
+  - //3905.cf/npm/gitalk@1/dist/gitalk.min.js
+  - //3905.cf/gh/blueimp/JavaScript-MD5/js/md5.min.js
+  - position: comments
+    template: | 
+      <div id="gitalk-container"></div>
+      <script>
+        var gitalk = new Gitalk({
+          clientID: '62711ace6207db2ca530',
+          clientSecret: '6e9889a26ce495c33da1695026fd76a0e0e70fc1',
+          repo: 'blog',
+          owner: 'kobe-koto',
+          admin: ['kobe-koto'],
+          id: md5(location.pathname),
+          distractionFreeMode: false,
+          proxy: 'https://cros-cf.ooze.gq/?https://github.com/login/oauth/access_token'
+        })
+        gitalk.render('gitalk-container')
+      </script>
+  - position: post
+    template: | 
+      <div style="width:35%;background-color:#e0e0e0;height:1px;"></div>
+      <p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" rel=\"external nofollow\" target=\"_blank\"> 若無特殊聲明, 本站内容均使用 CC BY-NC-ND 4.0 證書進行授權.</a></p>
   # Built-in plugins
   # - cipher:
   #     placeholder: Passcode is required

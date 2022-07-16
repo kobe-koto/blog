@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: koto's Blog
+title: Koto's Blog
 subtitle: ''
 description: ''
 keywords:
-author: kobe koto
-language: zh-CN
+author: kobe-koto
+language: zh-TW
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://blog.koto.cc
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
