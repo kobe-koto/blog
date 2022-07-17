@@ -5,7 +5,7 @@
 # Site
 title: Koto's Blog
 subtitle: ''
-description: ''
+description: 'kobe koto blog'
 keywords:
 author: kobe-koto
 language: zh-TW
@@ -13,8 +13,8 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blog.koto.cc
-permalink: :year/:month/:day/:title/
+url: https://blog.koto.cc
+permalink: articles/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

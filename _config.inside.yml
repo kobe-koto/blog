@@ -112,7 +112,6 @@ menu:
   Home: /
   # About: /about
   # Links: /links
-  Github: https://github.com/kobe-koto
 
 # Social media URL
 sns:
@@ -427,6 +426,34 @@ plugins:
     template: | 
       <div style="width:35%;background-color:#e0e0e0;height:1px;"></div>
       <p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" rel=\"external nofollow\" target=\"_blank\"> 若無特殊聲明, 本站内容均使用 CC BY-NC-ND 4.0 證書進行授權.</a></p>
+  - position: sidebar
+    template: |
+      <p style="text-align:center;padding:8px;" id="hitokotoText"></p>
+      <style>.φdi {margin: 1rem 0 1rem!important;}</style>
+      <script>
+        function GenHitokoto () {
+        var hitokotoURL = "https://hitokoto.suraimu.org/?t="+new Date().getTime();
+        var hitokotoXHR = new XMLHttpRequest();
+        hitokotoXHR.open("GET", hitokotoURL, true);
+        hitokotoXHR.setRequestHeader("accept","application/json");
+          hitokotoXHR.onerror = function () {
+            hitokotoXHR.onload = function(){};
+            document.getElementById("hitokotoText").innerHTML="hitokoto不見了!";
+          }
+          hitokotoXHR.onload = function () {
+            hitokotoXHR.onerror = function(){};
+            var hitokotoResponse = JSON.parse(hitokotoXHR.response);
+            if (hitokotoResponse.author == "") {
+              hitokotoResponse.authorText = "";
+            } else {
+              hitokotoResponse.authorText = hitokotoResponse.author+"的";
+            }
+            document.getElementById("hitokotoText").innerHTML= `「`+hitokotoResponse.content+`」<br><br><span style="font-size:smaller;">`+"來自"+hitokotoResponse.authorText+" 「 "+hitokotoResponse.artwork+" 」。</span>"
+          }
+          hitokotoXHR.send();
+        }
+        GenHitokoto();
+      </script>
   # Built-in plugins
   # - cipher:
   #     placeholder: Passcode is required
