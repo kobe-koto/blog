@@ -8,15 +8,15 @@ tags: 教程
 
 #### FireFox 70+
 
->Open ["about:config"](about:config) page.
+Open ["about:config"](about:config) page.
+
+Search "layout.css.backdrop-filter.enabled".
+
+Turn "layout.css.backdrop-filter.enabled" to ture.
+
+>*野兽潜心于新的**方向**，编撰**智慧**之章，洞悉世界万千。*
 >
->Search "layout.css.backdrop-filter.enabled".
+>*在追随者与侍者的祈祝中，野兽幻化轻盈。一路**嬉戏**，走遍人间。*
 >
->Turn "layout.css.backdrop-filter.enabled" to ture.
-
-*野兽潜心于新的**方向**，编撰**智慧**之章，洞悉世界万千。*
-
-*在追随者与侍者的祈祝中，野兽幻化轻盈。一路**嬉戏**，走遍人间。*
-
-*来自 **Mozilla 之书,** 6:27。*
+>*来自 **Mozilla 之书,** 6:27。*
 

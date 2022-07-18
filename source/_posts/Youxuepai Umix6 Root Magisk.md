@@ -22,9 +22,9 @@ tags: 教程
 
    在 [這裏](https://www.python.org/downloads/) 下載python的最新版本。
 
-   ![image-20220125160408833](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125160408833.png&raw=true)
+   ![image-20220125160408833](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125160408833.png)
 
-   若是無法訪問，請在 [這裏](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/python-3.10.2-amd64.exe&raw=true) 下載python的Windows x64 3.10.2版本。
+   若是無法訪問，請在 [這裏](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/python-3.10.2-amd64.exe) 下載python的Windows x64 3.10.2版本。
 
 2. 安裝python，一路Next即可，這裏不在贅述。
 
@@ -32,35 +32,35 @@ tags: 教程
 
    [MTK-Client Release](https://github.com/bkerler/mtkclient/releases)
 
-   下載最新Release版本![image-20220125154736463](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125154736463.png&raw=true)
+   下載最新Release版本![image-20220125154736463](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125154736463.png)
 
-   若是無法打開連結可訪問 [這裏](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/mtkclient-1.52.zip&raw=true) 來下載1.52版本
+   若是無法打開連結可訪問 [這裏](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/mtkclient-1.52.zip) 來下載1.52版本
 
 4. 解壓您所下載的檔案
 
-   ![image-20220125155154430](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155154430.png&raw=true)
+   ![image-20220125155154430](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155154430.png)
 
    打開解壓文件夾，直至看到下圖所示目錄結構
 
-   ![image-20220125155318196](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155318196.png&raw=true)
+   ![image-20220125155318196](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155318196.png)
 
 5. 複製地址欄中的地址
 
-   ![image-20220125155417872](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155417872.png&raw=true)
+   ![image-20220125155417872](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155417872.png)
 
 6. 打開cmd
 
    按下 Ctrl+Shift+Esc 打開任務管理員，在檔案裏選擇"執行新工作"。
 
-   ![image-20220125155627167](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155627167.png&raw=true)
+   ![image-20220125155627167](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155627167.png)
 
    在"開啓(O)："欄中輸入cmd，并將"以系統管理權限建立此工作。"打勾，最後按下確定。
 
-   ![image-20220125155854023](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155854023.png&raw=true)
+   ![image-20220125155854023](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125155854023.png)
 
    鍵入"cd /d "和你剛剛複製的目錄路徑，如圖。
 
-   ![image-20220125160046220](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125160046220.png&raw=true)
+   ![image-20220125160046220](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125160046220.png)
 
    鍵入"pip3 install -r requirements.txt"並回車。
 
@@ -70,9 +70,9 @@ tags: 教程
 
    在 [這裏](https://github.com/daynix/UsbDk/releases/) 下載最新的UsbDk MSI檔
 
-   ![image-20220125161700857](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125161700857.png&raw=true)
+   ![image-20220125161700857](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125161700857.png)
 
-   若是聯結無法打開，請在 [這裏(x86)](‪https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/UsbDk_1.0.22_x86.msi&raw=true) [這裏(x64)](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/UsbDk_1.0.22_x64_2.msi&raw=true) 下載。
+   若是聯結無法打開，請在 [這裏(x86)](‪https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/UsbDk_1.0.22_x86.msi) [這裏(x64)](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/UsbDk_1.0.22_x64_2.msi) 下載。
    
    安裝過程不再贅述，一路Next即可。
    
@@ -84,11 +84,11 @@ tags: 教程
 
 10. 在剛剛的 cmd 窗口中鍵入"python mtk xflash seccfg unlock"並回車
 
-    ![image-20220125164028458](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125164028458.png&raw=true)
+    ![image-20220125164028458](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125164028458.png)
 
 11. 按住您優學派上的所有硬體案件或只按住音量+和音量-以進入brom模式。
 
-    在程式輸出"Port - Device detected :)"之後，您便可以鬆開您的手了。![image-20220125164403560](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125164403560.png&raw=true)
+    在程式輸出"Port - Device detected :)"之後，您便可以鬆開您的手了。![image-20220125164403560](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125164403560.png)
 
     完成之後，執行"python mtk reset"來重啓您的設備。
 
@@ -116,23 +116,23 @@ tags: 教程
 
 14. 下載Magisk
 
-    在 [這裏](https://github.com/topjohnwu/Magisk/releases) 下載Magisk。(若是連結無法打開，可以在 [這裏](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/Magisk-v23.0.apk&raw=true) 下載)
+    在 [這裏](https://github.com/topjohnwu/Magisk/releases) 下載Magisk。(若是連結無法打開，可以在 [這裏](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/Magisk-v23.0.apk) 下載)
 
-    ![image-20220125165139354](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165139354.png&raw=true)
+    ![image-20220125165139354](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165139354.png)
 
     並在您的設備上安裝Magisk應用程式客戶端。
 
 15. 使用Magisk修補您的boot.img
 
-    ![image-20220125165711807](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165711807.png&raw=true)
+    ![image-20220125165711807](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165711807.png)
 
-    ![image-20220125165753018](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165753018.png&raw=true)
+    ![image-20220125165753018](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165753018.png)
 
-    ![image-20220125165808519](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165808519.png&raw=true)
+    ![image-20220125165808519](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165808519.png)
 
-    ![image-20220125165833055](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165833055.png&raw=true)
+    ![image-20220125165833055](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165833055.png)
 
-    ![image-20220125165854668](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165854668.png&raw=true)
+    ![image-20220125165854668](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125165854668.png)
 
     將圖中紫色劃綫路徑的鏡像拷貝到電腦上。（名字不同、路徑不同，請根據設備所示尋找。）
 
@@ -160,7 +160,7 @@ tags: 教程
 
 19. 如果成功開機，打開Magisk查看是否已root
 
-    ![image-20220125171059859](https://drive-koto.vercel.app/api?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125171059859.png&raw=true)
+    ![image-20220125171059859](https://file.koto.cc/api/raw/?path=/blog/優學派Umix6%20Root%20Magisk/image-20220125171059859.png)
 
 教程結束！
 
