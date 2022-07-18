@@ -83,12 +83,12 @@ appearance:
   # ]
 
   darkmode:
-    accent_color: '#539bf5'
-    foreground_color: '#adbac7'
+    accent_color: '#f0908d'
+    foreground_color: '#ffd7d7'
     border_color: '#373e47'
-    background: '#22272e'
-    sidebar_background: '#22272e'
-    card_background: '#2d333b'
+    background: '#000000'
+    sidebar_background: '#000000'
+    card_background: '#232323'
     highlight: [
       '#2d333b', '#444c56', '#3e4451', '#545862',
       '#565c64', '#abb2bf', '#b6bdca', '#c8ccd4',
@@ -125,6 +125,10 @@ sns:
   - icon: github
     title: GitHub
     url: https://github.com/kobe-koto
+    
+  - icon: qq
+    title: QQ Group
+    url: https://jq.qq.com/?_wv=1027&k=reL3M7Tr
     
   - icon: twitter
     title: Twitter
@@ -297,7 +301,7 @@ copyright:
   # link: false
 
   # license: Attribution-NonCommercial-NoDerivatives 4.0 International
-  #    (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\"
+  #    (<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW\"
   #    rel=\"external nofollow\" target=\"_blank\">CC BY-NC-ND 4.0</a>)
 
   # Display published date, default to `false`
@@ -406,6 +410,61 @@ plugins:
   - //3905.cf/npm/gitalk@1/dist/gitalk.css
   - //3905.cf/npm/gitalk@1/dist/gitalk.min.js
   - //3905.cf/gh/blueimp/JavaScript-MD5/js/md5.min.js
+  
+  - position: post
+    template: | 
+      <div style="width:35%;background-color:#f0908d;height:1px;"></div>
+      <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="external nofollow" target="_blank"> 若無特殊聲明, 本站内容均使用 CC BY-NC-ND 4.0 (zh-TW) 證書進行授權.</a></p>
+      
+  - position: head_end
+    template: | 
+      <style>
+        .φdi {
+          margin: 1rem 0 1rem !important;
+        }
+        .gt-btn-preview,.gt-header-textarea {
+          background-color: rgba(0,0,0,0) !important;
+        }
+        .gt-ico-text,.gt-container a,.gt-btn,.gt-link {
+          color: #f0908d !important;
+        }
+        .gt-svg svg {
+          fill: #f0908d !important;
+        }
+        .gt-link {
+          border-bottom: 1px dotted #f0908d !important;
+        }
+        .gt-btn {
+          border-color: #f0908d !important;
+        }
+        .gt-btn-login {
+          background-color: #ffd7d7 !important;
+        }
+      </style>
+      <script>
+        function GenHitokoto () {
+          var hitokotoURL = "https://hitokoto.suraimu.org/?t="+new Date().getTime();
+          var hitokotoXHR = new XMLHttpRequest();
+          hitokotoXHR.open("GET", hitokotoURL, true);
+          hitokotoXHR.setRequestHeader("accept","application/json");
+          hitokotoXHR.onerror = function () {
+            hitokotoXHR.onload = function(){};
+            document.getElementById("hitokotoText").innerHTML="hitokoto不見了!";
+          }
+          hitokotoXHR.onload = function () {
+            hitokotoXHR.onerror = function(){};
+            var hitokotoResponse = JSON.parse(hitokotoXHR.response);
+            if (hitokotoResponse.author == "") {
+              hitokotoResponse.authorText = "";
+            } else {
+              hitokotoResponse.authorText = hitokotoResponse.author+"的";
+            }
+            document.getElementById("hitokotoText").innerHTML= `「`+hitokotoResponse.content+`」<br><br><span style="font-size:smaller;">`+"來自"+hitokotoResponse.authorText+" 「 "+hitokotoResponse.artwork+" 」</span>"
+          }
+          hitokotoXHR.send();
+        }
+      </script>
+      
   - position: comments
     template: | 
       <div id="gitalk-container"></div>
@@ -422,38 +481,12 @@ plugins:
         })
         gitalk.render('gitalk-container')
       </script>
-  - position: post
-    template: | 
-      <div style="width:35%;background-color:#e0e0e0;height:1px;"></div>
-      <p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" rel=\"external nofollow\" target=\"_blank\"> 若無特殊聲明, 本站内容均使用 CC BY-NC-ND 4.0 證書進行授權.</a></p>
+      
   - position: sidebar
     template: |
       <p style="text-align:center;padding:8px;" id="hitokotoText"></p>
-      <style>.φdi {margin: 1rem 0 1rem!important;}</style>
-      <script>
-        function GenHitokoto () {
-        var hitokotoURL = "https://hitokoto.suraimu.org/?t="+new Date().getTime();
-        var hitokotoXHR = new XMLHttpRequest();
-        hitokotoXHR.open("GET", hitokotoURL, true);
-        hitokotoXHR.setRequestHeader("accept","application/json");
-          hitokotoXHR.onerror = function () {
-            hitokotoXHR.onload = function(){};
-            document.getElementById("hitokotoText").innerHTML="hitokoto不見了!";
-          }
-          hitokotoXHR.onload = function () {
-            hitokotoXHR.onerror = function(){};
-            var hitokotoResponse = JSON.parse(hitokotoXHR.response);
-            if (hitokotoResponse.author == "") {
-              hitokotoResponse.authorText = "";
-            } else {
-              hitokotoResponse.authorText = hitokotoResponse.author+"的";
-            }
-            document.getElementById("hitokotoText").innerHTML= `「`+hitokotoResponse.content+`」<br><br><span style="font-size:smaller;">`+"來自"+hitokotoResponse.authorText+" 「 "+hitokotoResponse.artwork+" 」。</span>"
-          }
-          hitokotoXHR.send();
-        }
-        GenHitokoto();
-      </script>
+      <script>GenHitokoto();</script>
+      
   # Built-in plugins
   # - cipher:
   #     placeholder: Passcode is required
